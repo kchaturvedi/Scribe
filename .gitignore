@@ -1,6 +1,2 @@
 node_modules/
 .next/
-styles/
-pages/about.js
-pages/post.js
-posts/hello-nextjs.md

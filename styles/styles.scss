@@ -1,0 +1,20 @@
+@import './bootstrap/bootstrap';
+
+.card {
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+    & > img {
+
+    }
+  }
+}
+
+.markdown img {
+  @extend .img-fluid;
+}
+
+// .card-shadow:hover {
+//   box-shadow: 0px 10px 24px 5px rgba(0,0,0,0.44);
+// }
