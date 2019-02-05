@@ -1,12 +1,18 @@
-const postList = () => (
+export default () => (
   [
+    {
+      id: 'beacon-of-education',
+      title: 'The Beacon of Education',
+      date: '3 December 2018',
+      img: '../static/spacex.jpg',
+      featured: true
+    },
     {
       id: 'hello-nextjs',
       title: 'Hello Next.js',
       date: '2 days ago',
-      img: 'https://source.unsplash.com/user/itscharu',
-      description: 'And we can have a title as well.',
-      content: 'hello-nextjs.md'
+      img: '../static/spacex.jpg',
+      description: 'And we can have a title as well.'
     },
     {
       id: 'learn-nextjs',
@@ -22,5 +28,3 @@ const postList = () => (
     }
   ]
 )
-
-export default postList

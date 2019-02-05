@@ -11,7 +11,7 @@ const Post = (post) => (
     </Head>
     <div className='row mt-4' style={{ marginLeft: '10rem', marginRight: '10rem' }}>
       <div className='markdown'>
-        <ReactMarkdown source={'' + post.content} escapeHtml={false} linkTarget={'_blank'} />
+        <ReactMarkdown source={post.content} escapeHtml={false} linkTarget={'_blank'} />
       </div>
     </div>
   </Layout>

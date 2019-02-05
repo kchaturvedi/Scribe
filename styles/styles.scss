@@ -2,11 +2,19 @@
 
 .card {
   transition: 0.3s;
+  overflow: hidden;
+  .img-container {
+    overflow: hidden;
+  }
+  .card-img-top {
+    transition: 0.3s;
+  }
+
   &:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.1);
-    & > img {
-
+    .card-img-top {
+      transform: scale(1.1);
     }
   }
 }
