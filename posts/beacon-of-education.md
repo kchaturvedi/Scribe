@@ -28,7 +28,8 @@ I mentioned [Khan Academy](https://www.khanacademy.org) earlier but it is worth 
 [Girls Who Code](https://girlswhocode.com) is an initiative to close the gender gap in technology, helping girls who would otherwise shy away from programming to develop a career in Computer Science and related subject areas.
 
 > “Knowledge is power. Information is liberating. Education is the premise of progress, in every society, in every family.”
-~ [Kofi Annan](https://www.globalpartnership.org/blog/kofi-annan-knew-importance-education)
+
+> [Kofi Annan](https://www.globalpartnership.org/blog/kofi-annan-knew-importance-education)
 
 ## Further Reading
 [Steve Jobs’ widow is reinventing high school](https://www.businessinsider.com/steve-jobs-widow-is-reinventing-high-school-2015-9) — Business Insider
