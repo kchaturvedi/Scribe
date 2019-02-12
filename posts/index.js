@@ -1,4 +1,4 @@
-export default () => (
+const postList = () => (
   [
     {
       id: 'beacon-of-education',
@@ -28,3 +28,5 @@ export default () => (
     }
   ]
 )
+
+module.exports = postList

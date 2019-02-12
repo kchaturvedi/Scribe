@@ -13,7 +13,7 @@ export default () => (
           postList().map((post) => {
             if (post.featured) {
               return (
-                <Link href={`/post?id=${post.id}`} key={post.id}>
+                <Link href={`/post?id=${post.id}`} key={post.id} as={`/${post.id}`}>
                   <div className='card'>
                     {post.img && <div className='img-container'><img className='card-img-top' src={post.img} alt='...' /></div>}
                     <div className='card-body'>

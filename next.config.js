@@ -12,6 +12,12 @@ module.exports = (phase, { defaultConfig }) => {
   }
 
   const withSass = require('@zeit/next-sass')
+  const postList = require('./posts/index')
+
+  const exportMap = {}
+  postList().map((post) => {
+    exportMap[`/${post.id}`] = { page: '/post', query: { id: post.id } }
+  })
 
   return withSass({
     webpack: (config) => {
@@ -22,18 +28,14 @@ module.exports = (phase, { defaultConfig }) => {
         }
       )
       return config
+    },
+    target: 'serverless',
+    exportPathMap: () => {
+      console.log(exportMap)
+      return {
+        '/': { page: '/' },
+        ...exportMap
+      }
     }
   })
 }
-
-// const withSass = require('@zeit/next-sass')
-// module.exports = withSass({
-//
-//   exportPathMap: function () {
-//     return {
-//       '/': { page: '/' },
-//       '/about': { page: '/about' },
-//       '/post': { page: '/post' }
-//     }
-//   }
-// })
