@@ -14,11 +14,11 @@
   "license": "ISC",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
-    "next": "^7.0.2",
+    "next": "^8.0.0",
     "node-sass": "^4.11.0",
     "raw-loader": "^1.0.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
     "react-markdown": "^4.0.6"
   }
 }
