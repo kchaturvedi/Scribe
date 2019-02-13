@@ -1,9 +1,4 @@
-# The Beacon of Education
-###### Edition 1 | 19 January 2018
-
 Education is the most essential tool that can change people’s lives. Just think about the ways having an education improves the human condition – it helps you live a healthier, longer, and happier life, as [seen in Mauritius](https://www.who.int/healthpromotion/conferences/9gchp/parallel-session-16-anil-gayan-eng.pdf). An educated mind is wired with knowledge and rationality instead of superstitions and misinformation. And [correlation between education level and survival rates](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4144011/) in the aftermath of the 2004 Indonesian tsunami shows that education can literally save lives.
-
-![SpaceX photo](../static/spacex.jpg)
 
 If education gives great benefits, then the lack of education can do even greater harm. It has been argued that the rise of the Nazi party in Germany was due to the poor quality of secondary education in the country, compared with other parts of the world. And today, fake news threatens to misinform and mislead, [ending in most cases with violence](https://www.wired.com/story/how-whatsapp-fuels-fake-news-and-violence-in-india/). In the end, [only education can stop the spread of fake news](https://tech.newstatesman.com/guest-opinion/education-antidote-fake-news), as an educated and scientific mind will always analyze the evidence behind a story before believing the story at face-value.
 

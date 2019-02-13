@@ -4,7 +4,7 @@ const postList = () => (
       id: 'beacon-of-education',
       title: 'The Beacon of Education',
       date: '3 December 2018',
-      img: '../static/spacex.jpg',
+      img: '../static/nikhita-s-615116-unsplash.jpg',
       featured: true
     },
     {

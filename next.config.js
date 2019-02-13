@@ -31,7 +31,6 @@ module.exports = (phase, { defaultConfig }) => {
     },
     target: 'serverless',
     exportPathMap: () => {
-      console.log(exportMap)
       return {
         '/': { page: '/' },
         ...exportMap
