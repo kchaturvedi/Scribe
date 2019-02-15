@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import ReactMarkdown from 'react-markdown'
-import Layout from '../components/Layout.js'
+import * as Icon from 'react-feather'
 
+import Layout from '../components/Layout'
 import postList from '../posts/index'
 
 const Post = (post) => (
@@ -18,6 +19,8 @@ const Post = (post) => (
           <div className='card-body'>
             <h3 className='card-title'>{post.title}</h3>
             <h6 className='card-subtitle text-muted'>by Kartik Chaturvedi</h6>
+            <span className='badge badge-pill badge-secondary mt-2'>education</span>
+            <span className='badge badge-pill badge-secondary mt-2 ml-1'>technology</span>
           </div>
           <div className='card-footer text-muted'>
             <div className='row'>
@@ -25,7 +28,16 @@ const Post = (post) => (
                 {post.date}
               </div>
               <div className='col-sm text-right'>
-                <i>Share this post: </i>
+                <span>Share this post: </span>
+                <a className='post-share-link pl-1' href='#'>
+                  <Icon.Linkedin />
+                </a>
+                <a className='post-share-link pl-2' href='#'>
+                  <Icon.Twitter />
+                </a>
+                <a className='post-share-link pl-1' href='#'>
+                  <Icon.Facebook />
+                </a>
               </div>
             </div>
           </div>
