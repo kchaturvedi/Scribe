@@ -1,7 +1,7 @@
 @import './bootstrap/bootstrap';
 
 .featured-container {
-  &:hover {
+  .featured-img:hover, .card:hover {
     cursor: pointer;
   }
 }
@@ -14,22 +14,17 @@
   }
 }
 
-.img-container {
-  transition: 0.3s;
-
+.post-container {
   img {
     transition: 0.3s;
-    width: 80%;
-    box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.25);
   }
-}
 
-.post-container {
   &:hover {
     cursor: pointer;
     img {
-      transform: translateY(-10px);
-      box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.5);
+      // transform: translateY(-10px);
+      box-shadow: 0px 5px 25px 8px rgba(0,0,0,0.45);
     }
   }
 }

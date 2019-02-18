@@ -9,9 +9,11 @@ export default () => (
   <Layout>
     <div className='container'>
       <div className='row mt-4'>
-        {
-          renderFeatured(postList().find((post) => (post.featured)))
-        }
+        <div className='col-sm'>
+          {
+            renderFeatured(postList().find((post) => (post.featured)))
+          }
+        </div>
       </div>
       <div className='row mt-4'>
         <div className='col-sm'>
