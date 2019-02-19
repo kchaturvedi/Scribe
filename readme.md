@@ -43,5 +43,3 @@ Open [http://localhost:3000](http://localhost:3000) to see your blog running!
 - Add custom CMS / database support to dynamically load content without editing any files
 - Add 'Related Posts' section at bottom of posts based on post tags
 - Create Tags page to view all posts with a particular tag
-
-## License
