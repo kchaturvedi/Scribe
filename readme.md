@@ -35,6 +35,12 @@ $ npm run dev
 #### View in browser
 Open [http://localhost:3000](http://localhost:3000) to see your blog running!
 
+#### Deploy to Now.sh
+```
+$ now
+```
+Learn more about Now: [https://zeit.co/now](https://zeit.co/now)
+
 ## Backlog
 - Improve styling for Markdown elements (in progress)
 - Fix some rendering issues on smaller screens (in progress)
