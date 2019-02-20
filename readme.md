@@ -1,6 +1,8 @@
 # Scribe
 The Serverless Markdown Blogging Framework
 
+**Live Demo**: [scribe-gc35nn20k.now.sh](scribe-gc35nn20k.now.sh)
+
 ## Features
 - Serverless deployments
 - Blazing fast Server-side Rendering using the [Next.js](nextjs.org) framework
@@ -45,6 +47,7 @@ Learn more about Now: [https://zeit.co/now](https://zeit.co/now)
 - Improve styling for Markdown elements (in progress)
 - Fix some rendering issues on smaller screens (in progress)
 - Fix alignment issues for post's featured image box (in progress)
+- Add Dark Mode support
 - Make configuration and customization easier
 - Add custom CMS / database support to dynamically load content without editing any files
 - Add 'Related Posts' section at bottom of posts based on post tags
