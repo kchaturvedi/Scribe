@@ -16,7 +16,7 @@ const FeaturedPost = ({ post }) => (
               <h3 className='card-title'>{post.title}</h3>
               {post.date && <p className='card-text text-muted'><small>{post.date}</small></p>}
               {post.summary && <p className='card-text text-muted'>{post.summary}</p>}
-              <span className='badge badge-pill badge-secondary'>{post.category}</span>
+              <span className='badge badge-pill badge-secondary'>#{post.category}</span>
             </div>
           </div>
         </div>
@@ -32,7 +32,7 @@ const FeaturedPost = ({ post }) => (
               <h3 className='card-title'>{post.title}</h3>
               {post.date && <p className='card-text text-muted'><small>{post.date}</small></p>}
               {post.summary && <p className='card-text text-muted'>{post.summary}</p>}
-              <span className='badge badge-pill badge-secondary'>{post.category}</span>
+              <span className='badge badge-pill badge-secondary'>#{post.category}</span>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ const FeaturedPost = ({ post }) => (
               <h3 className='card-title'>{post.title}</h3>
               {post.date && <p className='card-text text-muted'><small>{post.date}</small></p>}
               {post.summary && <p className='card-text text-muted'>{post.summary}</p>}
-              <span className='badge badge-pill badge-secondary'>{post.category}</span>
+              <span className='badge badge-pill badge-secondary'>#{post.category}</span>
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@ const FeaturedPost = ({ post }) => (
               <h3 className='card-title'>{post.title}</h3>
               {post.date && <p className='card-text text-muted'><small>{post.date}</small></p>}
               {post.summary && <p className='card-text text-muted'>{post.summary}</p>}
-              <span className='badge badge-pill badge-secondary'>{post.category}</span>
+              <span className='badge badge-pill badge-secondary'>#{post.category}</span>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@ const FeaturedPost = ({ post }) => (
               <h3 className='card-title'>{post.title}</h3>
               {post.date && <p className='card-text text-muted'><small>{post.date}</small></p>}
               {post.summary && <p className='card-text text-muted'>{post.summary}</p>}
-              <span className='badge badge-pill badge-secondary'>{post.category}</span>
+              <span className='badge badge-pill badge-secondary'>#{post.category}</span>
             </div>
           </div>
         </div>

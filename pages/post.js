@@ -18,8 +18,8 @@ const Post = (post) => (
         <div className='card post-title-card mx-auto text-center' style={{ width: '60rem' }}>
           <div className='card-body'>
             <h3 className='card-title'>{post.title}</h3>
-            <h6 className='card-subtitle text-muted'>by Kartik Chaturvedi</h6>
-            <span className='badge badge-pill badge-secondary mt-2'>education</span>
+            <h6 className='card-subtitle text-muted'>by {post.author}</h6>
+            <span className='badge badge-pill badge-secondary mt-2'>#{post.category}</span>
           </div>
           <div className='card-footer text-muted'>
             <div className='row'>
