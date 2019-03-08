@@ -72,7 +72,7 @@ const FeaturedPost = ({ post }) => (
       {/* XL */}
       <div className='featured-container d-none d-xl-block'>
         <div className='container mt-0 pt-0' style={{ height: '25rem', overflow: 'hidden' }}>
-          { post.img && <img className='featured-img img-fluid mx-auto' src={post.img} style={{ position: 'relative', bottom: '25rem', width: '100%' }} /> }
+          { post.img && <img className='featured-img img-fluid mx-auto' src={post.img} style={{ position: 'relative', bottom: '11rem', width: '100%' }} /> }
         </div>
         <div className='container mb-4' style={{ marginTop: '-5rem' }}>
           <div className='card post-title-card shadow text-center mr-5 ml-5'>
