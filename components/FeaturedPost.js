@@ -12,11 +12,22 @@ const FeaturedPost = ({ post }) => (
         </div>
         <div className='container mb-4' style={{ marginTop: '-2rem' }}>
           <div className='card post-title-card shadow text-center mr-3 ml-3'>
+            <div className='card-header shadow-sm'>
+              <div className='row'>
+                <div className='col-4 text-left text-muted'>
+                  {post.date}
+                </div>
+                <div className='col-4 text-center'>
+                  <strong>Featured</strong>
+                </div>
+                <div className='col-4 text-right text-muted'>
+                  <span className='badge badge-pill badge-secondary'>#{post.category}</span>
+                </div>
+              </div>
+            </div>
             <div className='card-body shadow'>
-              <h3 className='card-title'>{post.title}</h3>
-              {post.date && <p className='card-text text-muted'><small>{post.date}</small></p>}
-              {post.summary && <p className='card-text text-muted'>{post.summary}</p>}
-              <span className='badge badge-pill badge-secondary'>#{post.category}</span>
+              <h3 className='card-title mb-1'>{post.title}</h3>
+              {post.summary && <p className='card-text text-muted mt-2'>{post.summary}</p>}
             </div>
           </div>
         </div>
@@ -28,11 +39,22 @@ const FeaturedPost = ({ post }) => (
         </div>
         <div className='container mb-4' style={{ marginTop: '-3rem' }}>
           <div className='card post-title-card shadow text-center mr-4 ml-4'>
+            <div className='card-header shadow-sm'>
+              <div className='row'>
+                <div className='col-4 text-left text-muted'>
+                  {post.date}
+                </div>
+                <div className='col-4 text-center'>
+                  <strong>Featured</strong>
+                </div>
+                <div className='col-4 text-right text-muted'>
+                  <span className='badge badge-pill badge-secondary'>#{post.category}</span>
+                </div>
+              </div>
+            </div>
             <div className='card-body shadow'>
-              <h3 className='card-title'>{post.title}</h3>
-              {post.date && <p className='card-text text-muted'><small>{post.date}</small></p>}
-              {post.summary && <p className='card-text text-muted'>{post.summary}</p>}
-              <span className='badge badge-pill badge-secondary'>#{post.category}</span>
+              <h3 className='card-title mb-1'>{post.title}</h3>
+              {post.summary && <p className='card-text text-muted mt-2'>{post.summary}</p>}
             </div>
           </div>
         </div>
@@ -44,11 +66,22 @@ const FeaturedPost = ({ post }) => (
         </div>
         <div className='container mb-4' style={{ marginTop: '-6rem' }}>
           <div className='card post-title-card shadow text-center mr-5 ml-5'>
+            <div className='card-header shadow-sm'>
+              <div className='row'>
+                <div className='col-4 text-left text-muted'>
+                  {post.date}
+                </div>
+                <div className='col-4 text-center'>
+                  <strong>Featured</strong>
+                </div>
+                <div className='col-4 text-right text-muted'>
+                  <span className='badge badge-pill badge-secondary'>#{post.category}</span>
+                </div>
+              </div>
+            </div>
             <div className='card-body shadow'>
-              <h3 className='card-title'>{post.title}</h3>
-              {post.date && <p className='card-text text-muted'><small>{post.date}</small></p>}
-              {post.summary && <p className='card-text text-muted'>{post.summary}</p>}
-              <span className='badge badge-pill badge-secondary'>#{post.category}</span>
+              <h3 className='card-title mb-1'>{post.title}</h3>
+              {post.summary && <p className='card-text text-muted mt-2'>{post.summary}</p>}
             </div>
           </div>
         </div>
@@ -60,11 +93,22 @@ const FeaturedPost = ({ post }) => (
         </div>
         <div className='container mb-4' style={{ marginTop: '-5rem' }}>
           <div className='card post-title-card shadow text-center mr-5 ml-5'>
+            <div className='card-header shadow-sm'>
+              <div className='row'>
+                <div className='col-4 text-left text-muted'>
+                  {post.date}
+                </div>
+                <div className='col-4 text-center'>
+                  <strong>Featured</strong>
+                </div>
+                <div className='col-4 text-right text-muted'>
+                  <span className='badge badge-pill badge-secondary'>#{post.category}</span>
+                </div>
+              </div>
+            </div>
             <div className='card-body shadow'>
-              <h3 className='card-title'>{post.title}</h3>
-              {post.date && <p className='card-text text-muted'><small>{post.date}</small></p>}
-              {post.summary && <p className='card-text text-muted'>{post.summary}</p>}
-              <span className='badge badge-pill badge-secondary'>#{post.category}</span>
+              <h3 className='card-title mb-1'>{post.title}</h3>
+              {post.summary && <p className='card-text text-muted mt-2'>{post.summary}</p>}
             </div>
           </div>
         </div>
@@ -76,11 +120,22 @@ const FeaturedPost = ({ post }) => (
         </div>
         <div className='container mb-4' style={{ marginTop: '-5rem' }}>
           <div className='card post-title-card shadow text-center mr-5 ml-5'>
+            <div className='card-header shadow-sm'>
+              <div className='row'>
+                <div className='col-4 text-left text-muted'>
+                  {post.date}
+                </div>
+                <div className='col-4 text-center'>
+                  <strong>Featured</strong>
+                </div>
+                <div className='col-4 text-right text-muted'>
+                  <span className='badge badge-pill badge-secondary'>#{post.category}</span>
+                </div>
+              </div>
+            </div>
             <div className='card-body shadow'>
-              <h3 className='card-title'>{post.title}</h3>
-              {post.date && <p className='card-text text-muted'><small>{post.date}</small></p>}
-              {post.summary && <p className='card-text text-muted'>{post.summary}</p>}
-              <span className='badge badge-pill badge-secondary'>#{post.category}</span>
+              <h3 className='card-title mb-1'>{post.title}</h3>
+              {post.summary && <p className='card-text text-muted mt-2'>{post.summary}</p>}
             </div>
           </div>
         </div>
