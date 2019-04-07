@@ -11,9 +11,11 @@ const Post = ({ post }) => (
         </div>
         <div className='col-md-8'>
           <div className='card-body'>
-            <h5 className=''>{post.title}</h5>
+            <h5 className=''>
+              {post.title}
+              <small className='text-muted'>&nbsp;&nbsp;|&nbsp;&nbsp;{post.date}</small>
+            </h5>
             {post.summary && <p className='card-text text-muted'>{post.summary}</p>}
-            {post.date && <p className='card-text text-muted'><small>{post.date}</small></p>}
             <span className='badge badge-pill badge-secondary'>#{post.category}</span>
           </div>
         </div>
