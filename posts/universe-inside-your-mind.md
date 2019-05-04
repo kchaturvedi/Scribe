@@ -18,7 +18,7 @@ One of the biggest mysteries today is where we our civilisation is  headed. Prov
 
 But provided that all life we know of is based on the element carbon, which forms more kinds of bonds than most other elements, our carbon-based life form should be the most abundant kind in the universe. It’s almost “too easy” to make life if it is based on carbon. So the thought of having passed the Great Filter seems pretty egotistic…
 
-[image:B33D3A4F-1B16-4FA4-AD8A-FABA7C20506E-310-00002CA0B3CA3F7D/df8ee7da-7bda-44b2-9ad1-e8c97110024f.png]
+![img](../static/df8ee7da-7bda-44b2-9ad1-e8c97110024f.png)
 (https://waitbutwhy.com/2014/05/fermi-paradox.html)
 
 ### We Are the Great Filter

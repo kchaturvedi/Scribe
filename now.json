@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "Scribe",
+  "alias": "scribe.ikartik.com",
   "builds": [
     { "src": "next.config.js", "use": "@now/next" }
   ]
