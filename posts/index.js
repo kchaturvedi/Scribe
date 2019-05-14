@@ -8,7 +8,7 @@ const postList = () => (
       img: '../static/05f6dd3f-22d5-40db-b7a7-3b0a57486011.jpg',
       summary: 'It’s 2019, and our phones, TVs, and cars are more efficient than ever. But, our food is somehow still stuck in the past.',
       category: 'economy',
-      featured: true
+      featured: false
     },
     {
       id: 'lifetime-of-opportunity',
@@ -31,14 +31,14 @@ const postList = () => (
       featured: false
     },
     {
-      id: 'beacon-of-education',
-      title: 'The Beacon of Education',
+      id: 'welcome-to-scribe',
+      title: 'Welcome to Scribe!',
       author: 'Kartik Chaturvedi',
-      date: '19 January 2019',
-      img: '../static/nikhita-s-615116-unsplash.jpg',
-      summary: 'Education changes lives. How are we doing in bringing education to everyone around the world, especially those who need it most?',
-      category: 'education',
-      featured: false
+      date: '1 January 2019',
+      img: '../static/lauren-mancke-60627-unsplash.jpg',
+      summary: 'Scribe is an easy way to blog and share your thoughts with the world. There is no setting up databases or giving up ownership of your writing. Just write in markdown and have millions read it in just 10 seconds!',
+      category: 'internet',
+      featured: true
     }
   ]
 )

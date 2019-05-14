@@ -25,7 +25,7 @@ $ npm i
 ```
 
 #### Add posts
-1. Add any static content to the `/static` directory. Use any folder structure you prefer.
+1. Add any static content to the `/static` directory. Images, attachments, anything. Use any folder structure you prefer.
 2. Add your markdown post to the `/posts` directory and link to any static content you placed in the `/static` directory.
 3. Add the post's metadata to the `/posts/index.js` file.
 
