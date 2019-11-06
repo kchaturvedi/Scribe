@@ -1,13 +1,13 @@
 Since June 2018, NASA had been pinging the Opportunity Rover on Mars in an attempt to reestablish communication with the robot after a dust storm covered its solar panels with sand. On the 12th of February, NASA [announced](https://mars.nasa.gov/news/8413/nasas-opportunity-rover-mission-on-mars-comes-to-end/) that Opportunity was officially dead.
 
-![img](../static/Sol180B_fhaz_rovershadow-PIA06739.jpg)
+![img](../Sol180B_fhaz_rovershadow-PIA06739.jpg)
 *Opportunity in August 2004, taking a portrait using its front hazard-avoidance camera*
 
 The rover, launched in 2004, was on a 90-day mission to drive about 1 kilometer and test a few samples of the Martian soil. Instead, it became the solar system’s hardest working robot, serving the mission of science and discovery for more than 15 years without skipping a single day, driving over 45 kilometers! In its lifetime, [Oppy](https://twitter.com/i/moments/1096220356686172161) took more than 217,000 images, exposed rock surfaced to reveal their mineral composition, and even [found hematite](https://mars.jpl.nasa.gov/mer/newsroom/pressreleases/20040318a.html), a mineral that forms in water.
 
 Of course, not everything for the past 15 years was flawless — there were many problems that the rover had to face on the unknown and sometimes unpredictable Martian terrain. A year after landing, Opportunity lost steering in one of its front wheels and [got stuck in a sand trap](https://mars.nasa.gov/mer/newsroom/pressreleases/20050606a.html). Luckily, it was able to escape and continue on its path. A heater in its robotic arm limited the power supply, especially at night, so the team began to shut the rover down every Martian evening to avoid discharging the battery completely. In 2015, Opportunity’s 256MB flash memory died, and in 2017, it lost steering in the other front wheel. These failures are understandable for a rover that outlived its expected lifespan by a factor of 60. But finally, in the summer of 2018, a massive dust storm covered Opportunity’s solar panels and [blocked out most of the sunlight](https://mars.nasa.gov/resources/21916/shades-of-martian-darkness/) during the day (pictured below), which completely exhausted the on-board batteries.
 
-![img](../static/PIA22521_sky1b.png)
+![img](../PIA22521_sky1b.png)
 *A view of a normal Martian day on the far left, with simulated views showing typical dust storms on Mars, with the one that defeated Opportunity simulated on the far right*
 
 (NASA’s latest rover, Curiosity, which landed in 2012, also [faced these same dust storms](https://mars.nasa.gov/news/8351/curiosity-captures-photos-of-thickening-dust/) even though it was on the other side of the planet that Opportunity was on. Curiosity, however, was unaffected by the lack of sunlight because it is nuclear-powered)
@@ -26,7 +26,7 @@ Just like Spirit before it, [Opportunity sits at rest](https://www.wired.com/sto
 
 Until then, farewell Opportunity, and job well done!
 
-![img](../static/opportunity_rover.png)
+![img](../opportunity_rover.png)
 
 > “On the distant plains of Mars, the  [#Opportunity](https://twitter.com/hashtag/Opportunity?src=hash)  rover now joins its twin, Spirit, as a monument to humankind’s drive to explore and discover.”
 > ~ [Bill Nye](https://twitter.com/BillNye/status/1095809729807314944)

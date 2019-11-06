@@ -2,8 +2,8 @@ import Head from 'next/head'
 import ReactMarkdown from 'react-markdown'
 import * as Icon from 'react-feather'
 
-import Layout from '../components/Layout'
-import postList from '../posts/index'
+import Layout from '../../components/Layout'
+import postList from '../../posts/index'
 
 const Post = (post) => (
   <Layout>
@@ -11,7 +11,7 @@ const Post = (post) => (
       <title>{post.title}</title>
     </Head>
     <div className='container-fluid mx-0 px-0' style={{ height: '35rem', overflow: 'hidden' }}>
-      { post.img && <img className='img-fluid mx-auto d-block' src={post.img} style={{ position: 'relative', bottom: '17rem' }} /> }
+      {post.img && <img className='img-fluid mx-auto d-block' src={post.img} style={{ position: 'relative', bottom: '17rem' }} />}
     </div>
     <div className='container' style={{ marginTop: '-5rem' }}>
       <div className='card post-title-card mx-auto text-center' style={{ width: '60rem' }}>
@@ -36,6 +36,8 @@ const Post = (post) => (
               <a className='post-share-link pl-1' href='#'>
                 <Icon.Facebook />
               </a>
+              <a href={`https://twitter.com/intent/tweet?url=https://blog.ikartik.com/posts/${post.id}`} className='twitter-share-button' data-show-count='false'>Tweet</a>
+              <script async src='https://platform.twitter.com/widgets.js' charSet='utf-8' />
             </div>
           </div>
         </div>
@@ -45,7 +47,7 @@ const Post = (post) => (
     <div className='container'>
       <div className='row mt-5' style={{ marginLeft: '12rem', marginRight: '12rem' }}>
         <div className='markdown'>
-          <ReactMarkdown source={post.content} escapeHtml={false} linkTarget={'_blank'} />
+          <ReactMarkdown source={post.content} escapeHtml={false} linkTarget='_blank' />
         </div>
       </div>
     </div>
@@ -54,7 +56,7 @@ const Post = (post) => (
 
 Post.getInitialProps = async ({ query }) => {
   const post = postList().find(post => post.id === query.id)
-  const content = await require(`../posts/${post.id}.md`)
+  const content = await require(`../../posts/${query.id}.md`)
   return { ...post, content }
 }
 

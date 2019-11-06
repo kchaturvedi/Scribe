@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 import '../styles/styles.scss'
 
 import postList from '../posts/index'
@@ -7,6 +9,9 @@ import FeaturedPost from '../components/FeaturedPost'
 
 export default () => (
   <Layout>
+    <Head>
+      <title>Scribe - the Serverless Markdown Blogging Framework</title>
+    </Head>
     <div className='container'>
       <div className='row mt-4'>
         <div className='col-sm'>
