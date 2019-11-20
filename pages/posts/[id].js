@@ -1,3 +1,4 @@
+import fetch from 'isomorphic-unfetch'
 import Head from 'next/head'
 import ReactMarkdown from 'react-markdown'
 import * as Icon from 'react-feather'
@@ -5,7 +6,8 @@ import * as Icon from 'react-feather'
 import Layout from '../../components/Layout'
 import postList from '../../posts/index'
 
-const Post = (post) => (
+function Post({post}) {
+  return (
   <Layout>
     <Head>
       <title>{post.title}</title>
@@ -47,14 +49,19 @@ const Post = (post) => (
     <div className='container'>
       <div className='row mt-5' style={{ marginLeft: '12rem', marginRight: '12rem' }}>
         <div className='markdown'>
-          <ReactMarkdown source={post.content} escapeHtml={false} linkTarget='_blank' />
+          <ReactMarkdown source={post.content} linkTarget='_blank' />
         </div>
       </div>
     </div>
   </Layout>
-)
+  )
+}
 
-Post.getInitialProps = async ({ query }) => {
+Post.getInitialProps = async ({ query }) => {  
+  const res = await fetch(`http://localhost:3000/api/retrieve/${query.id}`)
+  const json = await res.json()
+  return {post : json}
+
   const post = postList().find(post => post.id === query.id)
   const content = await require(`../../posts/${query.id}.md`)
   return { ...post, content }
