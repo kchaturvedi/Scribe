@@ -62,9 +62,9 @@ Post.getInitialProps = async ({ query }) => {
   const json = await res.json()
   return {post : json}
 
-  const post = postList().find(post => post.id === query.id)
-  const content = await require(`../../posts/${query.id}.md`)
-  return { ...post, content }
+  // const post = postList().find(post => post.id === query.id)
+  // const content = await require(`../../posts/${query.id}.md`)
+  // return { ...post, content }
 }
 
 export default Post
