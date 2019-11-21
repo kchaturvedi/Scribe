@@ -7,7 +7,10 @@ const Post = ({ post }) => (
     <Link href={`/posts/${post.postId}`} key={post.postId}>
       <div className='row post-container mb-md-5 justify-content-between'>
         <div className='col-md-3 offset-md-1 mb-2'>
-          {post.img && <img className='img-fluid' src={post.img} />}
+          {post.image && <img className='img-fluid'
+            src={`https://images.unsplash.com/${post.image}?ixid=eyJhcHBfaWQiOjEyMDd9&fm=jpg&fit=fill&q=80&crop=entropy&h=300&w=300`}
+            style={{ height: 170, width: 255, overflow: 'hidden' }}
+          />}
         </div>
         <div className='col-md-8'>
           <div className='card-body'>

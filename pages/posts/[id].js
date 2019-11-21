@@ -14,7 +14,10 @@ function Post({post}) {
         <title>{post.title}</title>
       </Head>
       <div className='container-fluid mx-0 px-0' style={{ height: '35rem', overflow: 'hidden' }}>
-        {true && <img className='img-fluid mx-auto d-block' src={`https://api.unsplash.com/`} style={{ position: 'relative', bottom: '17rem' }} />}
+        {post.image && <img className='img-fluid mx-auto d-block'
+          src={`https://images.unsplash.com/${post.image}?ixid=eyJhcHBfaWQiOjEyMDd9&fm=jpg&fit=crop&q=80&crop=entropy&h=680&w=1680`}
+          // style={{ position: 'relative', bottom: '17rem' }}
+          />}
       </div>
       <div className='container' style={{ marginTop: '-5rem' }}>
         <div className='card post-title-card mx-auto text-center' style={{ width: '60rem' }}>
