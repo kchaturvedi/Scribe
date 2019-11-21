@@ -1,9 +1,10 @@
 import fetch from 'isomorphic-unfetch'
+import dayjs from 'dayjs'
+import LocalizedFormat from 'dayjs/plugin/localizedFormat'
 import Head from 'next/head'
 
 import '../styles/styles.scss'
 
-import postList from '../posts/index'
 import Layout from '../components/Layout'
 import Post from '../components/Post'
 import FeaturedPost from '../components/FeaturedPost'
@@ -41,6 +42,10 @@ const renderFeatured = (post) => post && <FeaturedPost post={post} key={post.pos
 Index.getInitialProps = async ({ query }) => {  
   const res = await fetch(`http://localhost:3000/api/retrieve/all`)
   const json = await res.json()
+  dayjs.extend(LocalizedFormat)
+  json.forEach((post) => {
+    post.date = dayjs(post.date).format('LL')
+  })
   return {posts : json}
 }
 

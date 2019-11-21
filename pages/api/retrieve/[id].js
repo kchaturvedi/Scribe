@@ -9,7 +9,12 @@ export default function handle(req, res) {
     collection.find({ postId: req.query.id }).toArray()
       .then(response => {
         post = response[0]
-        res.status(200).json(post)
+        res.end(JSON.stringify(post))
       })
-  }) 
+      .catch(err => {
+        console.log('error ' + err)
+        client.close()
+      })
+      client.close()
+  })
 }

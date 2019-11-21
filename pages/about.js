@@ -11,16 +11,17 @@ const About = (about) => (
     <div className='container'>
       <div className='row mt-5'>
         <div className='markdown' style={{ marginLeft: '12rem', marginRight: '12rem' }}>
-          <ReactMarkdown source={about.content} escapeHtml={false} linkTarget={'_blank'} />
+          Markdown will go here
+          {/* <ReactMarkdown source={about.content} escapeHtml={false} linkTarget={'_blank'} /> */}
         </div>
       </div>
     </div>
   </Layout>
 )
 
-About.getInitialProps = async ({ query }) => {
-  const content = await require('../posts/about.md')
-  return { content }
-}
+// About.getInitialProps = async ({ query }) => {
+//   // const content = await require('../posts/about.md')
+//   // return { content }
+// }
 
 export default About

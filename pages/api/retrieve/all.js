@@ -11,5 +11,6 @@ export default function handle(req, res) {
         posts = response
         res.status(200).json(posts)
       })
-  }) 
+      client.close()
+  })
 }

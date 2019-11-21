@@ -1,4 +1,6 @@
 import fetch from 'isomorphic-unfetch'
+import dayjs from 'dayjs'
+import LocalizedFormat from 'dayjs/plugin/localizedFormat'
 import Head from 'next/head'
 import ReactMarkdown from 'react-markdown'
 import * as Icon from 'react-feather'
@@ -60,6 +62,8 @@ Post.getInitialProps = async ({ query }) => {
   const res = await fetch(`http://localhost:3000/api/retrieve/${query.id}`)
   const json = await res.json()
   json.content = json.content.replace(/\\n/g, '\n')
+  dayjs.extend(LocalizedFormat)
+  json.date = dayjs(json.date).format('LL')
   return {post : json}
 
   // const post = postList().find(post => post.id === query.id)
