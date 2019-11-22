@@ -3,12 +3,15 @@ import Link from 'next/link'
 import '../styles/styles.scss'
 
 const FeaturedPost = ({ post }) => (
-  <Link href={`/posts/${post.id}`} key={post.id}>
+  <Link href={`/posts/${post.postId}`} key={post.postId}>
     <div>
       {/* XS */}
       <div className='featured-container d-block d-sm-none'>
         <div className='container mt-0 pt-0' style={{ height: '20rem', overflow: 'hidden' }}>
-          {post.img && <img className='featured-img img-fluid mx-auto' src={post.img} style={{ position: 'relative', bottom: '1rem', width: '100%' }} />}
+          {post.image && <img className='featured-img img-fluid mx-auto'
+            src={`https://images.unsplash.com/${post.image}?ixid=eyJhcHBfaWQiOjEyMDd9&fm=jpg&fit=crop&q=80&crop=entropy&h=560&w=1680`}
+            // style={{ position: 'relative', bottom: '1rem', width: '100%' }}
+          />}
         </div>
         <div className='container mb-4' style={{ marginTop: '-2rem' }}>
           <div className='card post-title-card shadow text-center mr-3 ml-3'>
@@ -35,7 +38,7 @@ const FeaturedPost = ({ post }) => (
       {/* SM */}
       <div className='featured-container d-none d-sm-block d-md-none'>
         <div className='container mt-0 pt-0' style={{ height: '20rem', overflow: 'hidden' }}>
-          {post.img && <img className='featured-img img-fluid mx-auto' src={post.img} style={{ position: 'relative', bottom: '3rem', width: '100%' }} />}
+          {post.image && <img className='featured-img img-fluid mx-auto' src={post.image} style={{ position: 'relative', bottom: '3rem', width: '100%' }} />}
         </div>
         <div className='container mb-4' style={{ marginTop: '-3rem' }}>
           <div className='card post-title-card shadow text-center mr-4 ml-4'>
@@ -62,7 +65,7 @@ const FeaturedPost = ({ post }) => (
       {/* MD */}
       <div className='featured-container d-none d-md-block d-lg-none'>
         <div className='container mt-0 pt-0' style={{ height: '25rem', overflow: 'hidden' }}>
-          {post.img && <img className='featured-img img-fluid mx-auto' src={post.img} style={{ position: 'relative', bottom: '8rem', width: '100%' }} />}
+          {post.image && <img className='featured-img img-fluid mx-auto' src={post.image} style={{ position: 'relative', bottom: '8rem', width: '100%' }} />}
         </div>
         <div className='container mb-4' style={{ marginTop: '-6rem' }}>
           <div className='card post-title-card shadow text-center mr-5 ml-5'>
@@ -89,7 +92,7 @@ const FeaturedPost = ({ post }) => (
       {/* LG */}
       <div className='featured-container d-none d-lg-block d-xl-none'>
         <div className='container mt-0 pt-0' style={{ height: '25rem', overflow: 'hidden' }}>
-          {post.img && <img className='featured-img img-fluid mx-auto' src={post.img} style={{ position: 'relative', bottom: '18rem', width: '100%' }} />}
+          {post.image && <img className='featured-img img-fluid mx-auto' src={post.image} style={{ position: 'relative', bottom: '18rem', width: '100%' }} />}
         </div>
         <div className='container mb-4' style={{ marginTop: '-5rem' }}>
           <div className='card post-title-card shadow text-center mr-5 ml-5'>
@@ -116,7 +119,10 @@ const FeaturedPost = ({ post }) => (
       {/* XL */}
       <div className='featured-container d-none d-xl-block'>
         <div className='container mt-0 pt-0' style={{ height: '25rem', overflow: 'hidden' }}>
-          {post.img && <img className='featured-img img-fluid mx-auto' src={post.img} style={{ position: 'relative', bottom: '11rem', width: '100%' }} />}
+          {post.image && <img className='featured-img img-fluid mx-auto'
+            src={`https://images.unsplash.com/${post.image}?ixid=eyJhcHBfaWQiOjEyMDd9&fm=jpg&fit=crop&q=80&crop=entropy&h=680&w=1680`}
+            // style={{ position: 'relative', bottom: '1rem', width: '100%' }}
+            />}
         </div>
         <div className='container mb-4' style={{ marginTop: '-5rem' }}>
           <div className='card post-title-card shadow text-center mr-5 ml-5'>
