@@ -4,5 +4,10 @@
   "alias": "scribe.ikartik.com",
   "builds": [
     { "src": "next.config.js", "use": "@now/next" }
-  ]
+  ],
+  "env": {
+    "rootPath": "https://scribe.ikartik.com",
+    "username": "zeit-L0exBF8a8X3DTrRwbp4QKx9m",
+    "password": "iPHoTyOzTaYeqyJa"
+  }
 }
