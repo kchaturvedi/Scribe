@@ -62,7 +62,7 @@ function Post({post}) {
 }
 
 Post.getInitialProps = async ({ query }) => {
-  const res = await fetch(`http://localhost:3000/api/retrieve/${query.id}`)
+  const res = await fetch(`${process.env.ROOT}/api/retrieve/${query.id}`)
   const json = await res.json()
   json.content = json.content.replace(/\\n/g, '\n')
   dayjs.extend(LocalizedFormat)
