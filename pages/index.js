@@ -40,7 +40,7 @@ function Index({posts}) {
 const renderFeatured = (post) => post && <FeaturedPost post={post} key={post.postId} />
 
 Index.getInitialProps = async ({ query }) => {
-  const res = await fetch(`${process.env.rootPath}/api/retrieve/all`)
+  const res = await fetch(`https://scribe.ikartik.com/api/retrieve/all`)
   const json = await res.json()
   dayjs.extend(LocalizedFormat)
   json.forEach((post) => {
