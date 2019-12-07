@@ -1,7 +1,7 @@
 # Scribe
 The Serverless Markdown Blogging Framework
 
-**Live Demo**: [scribe-ctxx490m9.now.sh](http://scribe-ctxx490m9.now.sh)
+**Live Demo**: [scribe-fxlfjnoa1.now.sh](http://scribe-fxlfjnoa1.now.sh)
 
 ## Features
 - Serverless deployments
