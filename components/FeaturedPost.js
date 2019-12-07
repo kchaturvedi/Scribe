@@ -3,7 +3,7 @@ import Link from 'next/link'
 import '../styles/styles.scss'
 
 const FeaturedPost = ({ post }) => (
-  <Link href={`/posts/${post.postId}`} key={post.postId}>
+  <Link href='/posts/[id]' as={`/posts/${post.postId}`}>
     <div>
       {/* XS */}
       <div className='featured-container d-block d-sm-none'>

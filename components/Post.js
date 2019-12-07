@@ -4,7 +4,7 @@ import '../styles/styles.scss'
 
 const Post = ({ post }) => (
   <div>
-    <Link href={`/posts/${post.postId}`} key={post.postId}>
+    <Link href='/posts/[id]' as={`/posts/${post.postId}`}>
       <div className='row post-container mb-md-5 justify-content-between'>
         <div className='col-md-3 offset-md-1 mb-2'>
           {post.image && <img className='img-fluid'
