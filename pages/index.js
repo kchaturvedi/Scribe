@@ -3,6 +3,9 @@ import dayjs from 'dayjs'
 import LocalizedFormat from 'dayjs/plugin/localizedFormat'
 import Head from 'next/head'
 
+import Prismic from 'prismic-javascript'
+import { apiEndpoint } from '../prismic-configuration'
+
 import '../styles/styles.scss'
 
 import Layout from '../components/Layout'
@@ -19,7 +22,7 @@ function Index({posts}) {
         <div className='row mt-4'>
           <div className='col-sm'>
             {
-              renderFeatured(posts.find((post) => (post.featured)) || undefined)
+              renderFeatured(posts.find((post) => (post.data.featured === 'yes')) || undefined)
             }
           </div>
         </div>
@@ -27,7 +30,7 @@ function Index({posts}) {
           <div className='col-sm'>
             {
               posts.map((post) => (
-                !post.featured && <Post post={post} key={post.postId} />
+                post.data.featured === 'no' && <Post post={post} key={post.id} />
               ))
             }
           </div>
@@ -37,17 +40,22 @@ function Index({posts}) {
   )
 }
 
-const renderFeatured = (post) => post && <FeaturedPost post={post} key={post.postId} />
+const renderFeatured = (post) => post && <FeaturedPost post={post} key={post.id} />
 
-Index.getInitialProps = async ({ query }) => {
-  const rootURL = process.env.NODE_ENV === 'production' ? 'https://scribe.ikartik.com' : 'http://localhost:3000'
-  const res = await fetch(`${rootURL}/api/retrieve/all`)
-  const json = await res.json()
-  dayjs.extend(LocalizedFormat)
-  json.forEach((post) => {
-    post.date = dayjs(post.date).format('LL')
-  })
-  return {posts : json}
+Index.getInitialProps = async ({ query }) => {	
+  const client = Prismic.client(apiEndpoint)
+  
+  const response = await client.query(
+    Prismic.Predicates.at('document.type', 'post'),
+    { orderings: '[my.post.date desc]' }
+  )
+  if (response) {
+    response.results.forEach((post) => {
+      console.log(post.data.featured)
+      post.data.date_published = dayjs(post.data.date_published).format('LL')
+    })
+    return { posts : response.results }
+  }
 }
 
 export default Index

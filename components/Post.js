@@ -1,25 +1,26 @@
 import Link from 'next/link'
+import { RichText } from 'prismic-reactjs'
 
 import '../styles/styles.scss'
 
 const Post = ({ post }) => (
   <div>
-    <Link href='/posts/[id]' as={`/posts/${post.postId}`}>
+    <Link href='/posts/[id]' as={`/posts/${post.uid}`}>
       <div className='row post-container mb-md-5 justify-content-between'>
         <div className='col-md-3 offset-md-1 mb-2'>
-          {post.image && <img className='img-fluid'
-            src={`https://images.unsplash.com/${post.image}?ixid=eyJhcHBfaWQiOjEyMDd9&fm=jpg&fit=fill&q=80&crop=entropy&h=300&w=300`}
+          {post.data.image.url && <img className='img-fluid'
+            src={post.data.image.url} alt={post.data.image.alt}
             style={{ height: 170, width: 255, overflow: 'hidden' }}
           />}
         </div>
         <div className='col-md-8'>
           <div className='card-body'>
             <h5 className=''>
-              {post.title}
-              <small className='text-muted'>&nbsp;&nbsp;|&nbsp;&nbsp;{post.date}</small>
+              {RichText.asText(post.data.title)}
+              <small className='text-muted'>&nbsp;&nbsp;|&nbsp;&nbsp;{post.data.date_published}</small>
             </h5>
-            {post.summary && <p className='card-text text-muted'>{post.summary}</p>}
-            <span className='badge badge-pill badge-secondary'>#{post.category}</span>
+            <p className='card-text text-muted'>{RichText.asText(post.data.summary)}</p>
+            <span className='badge badge-pill badge-secondary'>#{post.data.category}</span>
           </div>
         </div>
       </div>

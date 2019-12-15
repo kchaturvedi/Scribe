@@ -1,9 +1,10 @@
 import Link from 'next/link'
+import { RichText } from 'prismic-reactjs'
 
 import '../styles/styles.scss'
 
 const FeaturedPost = ({ post }) => (
-  <Link href='/posts/[id]' as={`/posts/${post.postId}`}>
+  <Link href='/posts/[id]' as={`/posts/${post.uid}`}>
     <div>
       {/* XS */}
       <div className='featured-container d-block d-sm-none'>
@@ -119,8 +120,8 @@ const FeaturedPost = ({ post }) => (
       {/* XL */}
       <div className='featured-container d-none d-xl-block'>
         <div className='container mt-0 pt-0' style={{ height: '25rem', overflow: 'hidden' }}>
-          {post.image && <img className='featured-img img-fluid mx-auto'
-            src={`https://images.unsplash.com/${post.image}?ixid=eyJhcHBfaWQiOjEyMDd9&fm=jpg&fit=crop&q=80&crop=entropy&h=680&w=1680`}
+          {post.data.image.url && <img className='featured-img img-fluid mx-auto'
+            src={post.data.image.post_view.url} alt={post.data.image.alt}
             // style={{ position: 'relative', bottom: '1rem', width: '100%' }}
             />}
         </div>
@@ -129,19 +130,19 @@ const FeaturedPost = ({ post }) => (
             <div className='card-header shadow-sm'>
               <div className='row'>
                 <div className='col-4 text-left text-muted'>
-                  {post.date}
+                  {post.data.date_published}
                 </div>
                 <div className='col-4 text-center'>
                   <strong>Featured</strong>
                 </div>
                 <div className='col-4 text-right text-muted'>
-                  <span className='badge badge-pill badge-secondary'>#{post.category}</span>
+                  <span className='badge badge-pill badge-secondary'>#{post.data.category}</span>
                 </div>
               </div>
             </div>
             <div className='card-body shadow'>
-              <h3 className='card-title mb-1'>{post.title}</h3>
-              {post.summary && <p className='card-text text-muted mt-2'>{post.summary}</p>}
+              <h3 className='card-title mb-1'>{RichText.asText(post.data.title)}</h3>
+              {post.data.summary && <p className='card-text text-muted mt-2'>{RichText.asText(post.data.summary)}</p>}
             </div>
           </div>
         </div>
