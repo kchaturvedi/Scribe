@@ -50,8 +50,8 @@ Index.getInitialProps = async ({ query }) => {
     { orderings: '[my.post.date desc]' }
   )
   if (response) {
+    dayjs.extend(LocalizedFormat)
     response.results.forEach((post) => {
-      console.log(post.data.featured)
       post.data.date_published = dayjs(post.data.date_published).format('LL')
     })
     return { posts : response.results }

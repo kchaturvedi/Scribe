@@ -78,7 +78,7 @@ Post.getInitialProps = async ({ query }) => {
     return {
       data: {
         ...document.data,
-        date_published: dayjs(Date(document.data.date_published).toString()).format('LL')
+        date_published: dayjs(document.data.date_published).format('LL')
       }
     }
   } catch (error) {
