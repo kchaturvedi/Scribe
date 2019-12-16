@@ -1,12 +1,9 @@
-import fetch from 'isomorphic-unfetch'
-import dayjs from 'dayjs'
-import LocalizedFormat from 'dayjs/plugin/localizedFormat'
 import Head from 'next/head'
-
 import Prismic from 'prismic-javascript'
 import { apiEndpoint } from '../prismic-configuration'
 
-import '../styles/styles.scss'
+import dayjs from 'dayjs'
+import LocalizedFormat from 'dayjs/plugin/localizedFormat'
 
 import Layout from '../components/Layout'
 import Post from '../components/Post'
@@ -19,21 +16,17 @@ function Index({posts}) {
         <title>Scribe - the Serverless Markdown Blogging Framework</title>
       </Head>
       <div className='container'>
-        <div className='row mt-4'>
-          <div className='col-sm'>
-            {
-              renderFeatured(posts.find((post) => (post.data.featured === 'yes')) || undefined)
-            }
-          </div>
+        <div>
+          {
+            renderFeatured(posts.find((post) => (post.data.featured === 'yes')) || undefined)
+          }
         </div>
-        <div className='row mt-4'>
-          <div className='col-sm'>
-            {
-              posts.map((post) => (
-                post.data.featured === 'no' && <Post post={post} key={post.id} />
-              ))
-            }
-          </div>
+        <div className='mt-5'>
+          {
+            posts.map((post) => (
+              post.data.featured === 'no' && <Post post={post} key={post.id} />
+            ))
+          }
         </div>
       </div>
     </Layout>

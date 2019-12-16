@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import { RichText } from 'prismic-reactjs'
 
-import '../styles/styles.scss'
-
 const Post = ({ post }) => (
   <div>
     <Link href='/posts/[id]' as={`/posts/${post.uid}`}>

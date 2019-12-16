@@ -1,4 +1,3 @@
-import '../styles/styles.scss'
 import Link from 'next/link'
 
 const Header = () => (

@@ -1,13 +1,12 @@
 import Head from 'next/head'
 import Prismic from 'prismic-javascript'
-import { RichText, Date } from 'prismic-reactjs'
+import { RichText } from 'prismic-reactjs'
 import { apiEndpoint } from '../../prismic-configuration'
 import htmlSerializer from '../../utils/htmlSerializer'
 
 import dayjs from 'dayjs'
 import LocalizedFormat from 'dayjs/plugin/localizedFormat'
 import * as Icon from 'react-feather'
-
 
 import Layout from '../../components/Layout'
 
@@ -85,18 +84,6 @@ Post.getInitialProps = async ({ query }) => {
     console.error(error)
     return error
   }
-  
-  // const rootURL = process.env.NODE_ENV === 'production' ? 'https://scribe.ikartik.com' : 'http://localhost:3000'
-  // const res = await fetch(`${rootURL}/api/retrieve/${query.id}`)
-  // const json = await res.json()
-  // json.content = json.content.replace(/\\n/g, '\n')
-  // dayjs.extend(LocalizedFormat)
-  // json.date = dayjs(json.date).format('LL')
-  // return {post : json}
-
-  // const post = postList().find(post => post.id === query.id)
-  // const content = await require(`../../posts/${query.id}.md`)
-  // return { ...post, content }
 }
 
 export default Post
