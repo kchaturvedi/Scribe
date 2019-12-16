@@ -3,6 +3,9 @@
 .featured-container {
   .featured-img:hover, .card:hover {
     cursor: pointer;
+    .card-title {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -34,39 +37,16 @@
       // transform: translateY(-10px);
       box-shadow: 0px 5px 25px 8px rgba(0,0,0,0.45);
     }
+
+    .card-title {
+      text-decoration: underline;
+    }
   }
 }
 
 .post-share-link {
   color: inherit;
 }
-
-// .markdown {
-//   img {
-//     @extend .img-fluid;
-//   }
-
-//   p {
-//     line-height: 1.8;
-//     font-size: 1.1rem;
-//     padding-bottom: 0.5rem;
-//   }
-
-//   blockquote {
-//     @extend .blockquote;
-//     @extend .text-center;
-//     @extend .card;
-//     @extend .p-3;
-
-//     p {
-//       @extend .mb-0;
-//     }
-//     p:nth-child(2) {
-//       @extend footer;
-//       @extend .blockquote-footer;
-//     }
-//   }
-// }
 
 // .card-shadow:hover {
 //   box-shadow: 0px 10px 24px 5px rgba(0,0,0,0.44);
