@@ -4,8 +4,8 @@ import { RichText } from 'prismic-reactjs'
 const Post = ({ post }) => (
   <div>
     <Link href='/posts/[id]' as={`/posts/${post.uid}`}>
-      <div className='row post-container mb-md-5 justify-content-between'>
-        <div className='col-md-3 offset-md-1 mb-2'>
+      <div className='row post-container mb-md-5'>
+        <div className='col-md-4 d-flex justify-content-md-end justify-content-center'>
           {post.data.image.url && <img className='img-fluid'
             src={post.data.image.url} alt={post.data.image.alt}
             style={{ height: 170, width: 255, overflow: 'hidden' }}
@@ -28,3 +28,4 @@ const Post = ({ post }) => (
 )
 
 export default Post
+
