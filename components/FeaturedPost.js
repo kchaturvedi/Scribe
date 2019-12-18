@@ -117,7 +117,7 @@ const FeaturedPost = ({ post }) => (
       </div> */}
       {/* XL */}
       <div className='featured-container d-block'>
-        <div className='mt-0 pt-0' style={{ height: '25%', overflow: 'hidden' }}>
+        <div className='mt-0 pt-0'>
           {post.data.image.url && <img className='featured-img img-fluid mx-auto'
             src={post.data.image.post_view.url} alt={post.data.image.alt}
             // style={{ position: 'relative', bottom: '1rem', width: '100%' }}
