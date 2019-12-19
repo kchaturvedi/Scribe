@@ -12,7 +12,6 @@ export default class CustomDocument extends Document {
         <Head />
         <body className='d-flex flex-column h-100'>
           <Main />
-          <Footer />
           <NextScript />
         </body>
       </Html>

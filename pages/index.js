@@ -6,34 +6,41 @@ import dayjs from 'dayjs'
 import LocalizedFormat from 'dayjs/plugin/localizedFormat'
 
 import Layout from '../components/Layout'
-import Post from '../components/Post'
-import FeaturedPost from '../components/FeaturedPost'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import Post from '../components/index/Post'
+import FeaturedPost from '../components/index/FeaturedPost'
 
 function Index({posts}) {
   return (
-    <Layout>
+    <div>
       <Head>
+        <meta charSet='utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no' />
         <title>Scribe - the Serverless Markdown Blogging Framework</title>
       </Head>
+      <Header />
       <div className='container'>
-        <div>
-          {
-            renderFeatured(posts.find((post) => (post.data.featured === 'yes')) || undefined)
-          }
-        </div>
+        { renderFeatured(posts) }
         <div className='mt-5'>
-          {
-            posts.map((post) => (
-              post.data.featured === 'no' && <Post post={post} key={post.id} />
-            ))
-          }
+          { renderPostList(posts) }
         </div>
       </div>
-    </Layout>
+      <Footer />
+    </div>
   )
 }
 
-const renderFeatured = (post) => post && <FeaturedPost post={post} key={post.id} />
+const renderFeatured = (posts) => {
+  var post = posts.find(post => post.data.featured === 'yes')
+  return post && <FeaturedPost post={post} key={post.id} />
+}
+
+const renderPostList = (posts) => (
+  posts.map((post) => (
+    post.data.featured === 'no' && <Post post={post} key={post.id} />
+  ))
+)
 
 Index.getInitialProps = async ({ query }) => {	
   const client = Prismic.client(apiEndpoint)
